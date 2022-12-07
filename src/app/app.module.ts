@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { SearchProductComponent } from './search-product/search-product.component';
 
 
 const myroute:Routes=[
@@ -36,7 +37,8 @@ const myroute:Routes=[
     UserLoginComponent,
     UserSignupComponent,
     AddProductComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    SearchProductComponent
   ],
   imports: [
     BrowserModule,
