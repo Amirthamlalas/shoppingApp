@@ -13,6 +13,7 @@ import { ViewProductComponent } from './view-product/view-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserViewComponent } from './user-view/user-view.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const myroute:Routes=[
@@ -63,7 +64,8 @@ const myroute:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
