@@ -10,7 +10,7 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
                 
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="" class="form-label">Product Name</label>
                     <input name="name" [(ngModel)]="name" type="text" class="form-control">
@@ -24,5 +24,37 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let i of search">
+                  <tr >
+                    
+                    <td>{{i.name}}</td>
+                    <td>{{i.image}}</td>
+                    <td>{{i.category}}</td>
+                    <td>{{i.description}}</td>
+                    <td>{{i.price}}</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+
+        </div>
+    </div>
+
+
 </div>
 
