@@ -8,15 +8,21 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
-  fetchCourse=()=>{
+  fetchProduct=()=>{
     return this.http.get("http://localhost:8080/view")
   }
 
-  addCourse=(DataToSend:any)=>{
+  addProduct=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/add",DataToSend)
   }
 
-  searchCourse=(DataToSend:any)=>{
+  searchProduct=(DataToSend:any)=>{
     return this.http.post("http://localhost:8080/search",DataToSend)
   }
+
+  userSignup=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/signup",DataToSend)
+  }
+
+  
 }

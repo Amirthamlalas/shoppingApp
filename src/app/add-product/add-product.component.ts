@@ -17,7 +17,7 @@ constructor(private api:ApiService){}
   readValue=()=>{
     let data:any={"name":this.name,"image":this.image,"category":this.category,"description":this.description,"price":this.price}
     console.log(data)
-    this.api.addCourse(data).subscribe(
+    this.api.addProduct(data).subscribe(
       (response:any)=>{
         if (response.status=="success") {
           alert("Product added successfully")
