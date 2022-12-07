@@ -12,6 +12,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UserViewComponent } from './user-view/user-view.component';
 
 
 const myroute:Routes=[
@@ -55,7 +56,8 @@ const myroute:Routes=[
     AddProductComponent,
     ViewProductComponent,
     SearchProductComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserViewComponent
   ],
   imports: [
     BrowserModule,
