@@ -8,6 +8,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserSignupComponent } from './user-signup/user-signup.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 const myroute:Routes=[
@@ -32,7 +33,8 @@ const myroute:Routes=[
     AppComponent,
     AdminLoginComponent,
     UserLoginComponent,
-    UserSignupComponent
+    UserSignupComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
