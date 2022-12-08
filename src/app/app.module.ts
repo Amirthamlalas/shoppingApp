@@ -46,6 +46,11 @@ const myroute:Routes=[
     path:"search",
     component:SearchProductComponent
     
+  },
+  {
+    path:"userview",
+    component:UserViewComponent
+    
   }
 ]
 @NgModule({
