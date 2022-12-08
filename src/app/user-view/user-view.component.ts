@@ -13,7 +13,7 @@ export class UserViewComponent {
 
     api.fetchProduct().subscribe(
       (response)=>{
-        this.data=response;
+        this.search=response;
       }
     )
   }
