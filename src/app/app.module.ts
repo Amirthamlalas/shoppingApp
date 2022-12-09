@@ -15,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { UsernavbarComponent } from './usernavbar/usernavbar.component';
 
 
 const myroute:Routes=[
@@ -70,7 +71,8 @@ const myroute:Routes=[
     SearchProductComponent,
     NavbarComponent,
     UserViewComponent,
-    ViewProfileComponent
+    ViewProfileComponent,
+    UsernavbarComponent
   ],
   imports: [
     BrowserModule,
