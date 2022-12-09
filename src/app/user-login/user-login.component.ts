@@ -18,13 +18,16 @@ constructor(private api:ApiService,private route:Router){}
     console.log(data)
     this.api.userLogin(data).subscribe(
       (response:any)=>{
-        if (response.length==0) {
-          alert("invalid mail and password")
-          
+        if (response.status=="success") {
+         let userid=response.userid
+         console.log(userid)
+         this.login=response;
+         localStorage.setItem("userinfo",userid)
+          this.route.navigate(['/userview'])
           
         } else {
-          this.login=response;
-          this.route.navigate(['/userview'])
+          
+          
         }
       }
     )
