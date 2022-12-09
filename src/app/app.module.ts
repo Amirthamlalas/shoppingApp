@@ -14,6 +14,7 @@ import { SearchProductComponent } from './search-product/search-product.componen
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 
 const myroute:Routes=[
@@ -51,6 +52,11 @@ const myroute:Routes=[
     path:"userview",
     component:UserViewComponent
     
+  },
+  {
+    path:"viewprofile",
+    component:ViewProfileComponent
+    
   }
 ]
 @NgModule({
@@ -63,7 +69,8 @@ const myroute:Routes=[
     ViewProductComponent,
     SearchProductComponent,
     NavbarComponent,
-    UserViewComponent
+    UserViewComponent,
+    ViewProfileComponent
   ],
   imports: [
     BrowserModule,

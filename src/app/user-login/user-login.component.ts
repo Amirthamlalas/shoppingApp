@@ -23,7 +23,7 @@ constructor(private api:ApiService,private route:Router){}
          console.log(userid)
          this.login=response;
          localStorage.setItem("userinfo",userid)
-          this.route.navigate(['/userview'])
+          this.route.navigate(['/viewprofile'])
           
         } else {
           
